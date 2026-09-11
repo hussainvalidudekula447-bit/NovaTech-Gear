@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTech Gear — Next-Gen Electronics & Premium Gadgets</title>
+  <meta name="description" content="Explore premium electronics, wireless audio, mechanical keyboards, and smart wearables at NovaTech Gear." />
+  
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span>🚀 <strong>LIMITED OFFER:</strong> Use code <code class="promo-pill" onclick="copyPromo('SAVE10')">SAVE10</code> for 10% OFF | Free Express Shipping on orders over $100</span>
+      <div class="announcement-links">
+        <a href="#tracking-section" id="top-track-btn"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo" id="brand-home-link">
+        <div class="logo-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-primary">Nova</span><span class="logo-accent">Tech</span>
+          <span class="logo-sub">GEAR</span>
+        </div>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search headphones, smartwatches, monitors..." 
+          autocomplete="off"
+        />
+        <button class="clear-search-btn" id="clear-search-btn" style="display: none;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Action Nav Buttons -->
+      <div class="nav-actions">
+        <button class="nav-btn" id="orders-nav-btn" title="View Recent Orders">
+          <i class="fa-solid fa-receipt"></i>
+          <span class="nav-btn-label">Orders</span>
+        </button>
+        <button class="cart-btn" id="cart-toggle-btn" aria-label="View Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-label">Cart</span>
+          <span class="cart-badge" id="cart-badge-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-fire"></i> 2026 Flagship Release
+        </div>
+        <h1 class="hero-title">
+          Engineered for <span class="gradient-text">Peak Performance</span> & Audio Purity
+        </h1>
+        <p class="hero-desc">
+          Discover high-performance wireless acoustics, aerospace-grade smartwatches, and ultra-fast peripherals engineered for innovators and creators.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog-section" class="btn btn-primary btn-glow">
+            <i class="fa-solid fa-arrow-down"></i> Shop All Products
+          </a>
+          <button class="btn btn-outline" onclick="filterByCategory('audio')">
+            <i class="fa-solid fa-headphones"></i> Audio Series
+          </button>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>2-Year Warranty</strong>
+              <span>100% Genuine Tech</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-truck-bolt"></i>
+            <div>
+              <strong>Fast Dispatch</strong>
+              <span>Under 24 Hours</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <div>
+              <strong>30-Day Returns</strong>
+              <span>Hassle-Free Policy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-featured">
+          <div class="featured-badge">🔥 Featured Pick</div>
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80" alt="Apex Sonic Pro" class="hero-img" />
+          <div class="hero-card-details">
+            <div class="hero-card-meta">
+              <h4>Apex Sonic Pro ANC</h4>
+              <span class="hero-card-price">$249.99</span>
+            </div>
+            <p class="hero-card-sub">60h Battery • Graphene Drivers • 40dB ANC</p>
+            <button class="btn btn-sm btn-primary" onclick="openProductModal('prod-1')">
+              View Product <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog Section -->
+  <main class="main-content" id="catalog-section">
+    <div class="container">
+      
+      <!-- Filter Bar & Toolbar -->
+      <div class="catalog-toolbar">
+        <div class="categories-nav" id="category-pills">
+          <button class="category-pill active" data-category="all">
+            <i class="fa-solid fa-border-all"></i> All Products
+          </button>
+          <button class="category-pill" data-category="audio">
+            <i class="fa-solid fa-headphones"></i> Audio
+          </button>
+          <button class="category-pill" data-category="wearables">
+            <i class="fa-solid fa-clock"></i> Wearables
+          </button>
+          <button class="category-pill" data-category="accessories">
+            <i class="fa-solid fa-keyboard"></i> Accessories
+          </button>
+          <button class="category-pill" data-category="laptops">
+            <i class="fa-solid fa-display"></i> Displays & Tabs
+          </button>
+        </div>
+
+        <div class="sort-wrapper">
+          <label for="sort-select"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort by:</label>
+          <select id="sort-select" class="custom-select">
+            <option value="featured">Featured Picks</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name-asc">Alphabetical (A - Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Active Filters / Status Indicator -->
+      <div class="catalog-status" id="catalog-status-bar">
+        <span id="product-count-text">Showing all products</span>
+        <button id="reset-filters-btn" class="reset-link" style="display: none;">
+          <i class="fa-solid fa-rotate-left"></i> Reset Filters
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically via JavaScript -->
+        <div class="grid-loading">
+          <div class="spinner"></div>
+          <p>Loading NovaTech Catalog...</p>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="empty-products" style="display: none;">
+        <i class="fa-solid fa-box-open empty-icon"></i>
+        <h3>No matching products found</h3>
+        <p>Try searching for different keywords or clear the active category filters.</p>
+        <button class="btn btn-primary" onclick="resetAllFilters()">Browse All Items</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Features Banner Section -->
+  <section class="trust-banner">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-shield-check"></i></div>
+        <h3>Secure Checkout</h3>
+        <p>256-bit encrypted simulated gateway with instant order verification.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-tags"></i></div>
+        <h3>Best Value Guarantee</h3>
+        <p>Direct manufacturer pricing with exclusive promotional savings.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Expert Tech Support</h3>
+        <p>Our audio & hardware specialists are ready to guide your purchase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="logo-text">
+            <span class="logo-primary">Nova</span><span class="logo-accent">Tech</span>
+            <span class="logo-sub">GEAR</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Crafting premium audio experiences and high-performance smart gadgets for the next generation of creators.
+        </p>
+        <div class="promo-callout">
+          <span>Apply Promo <strong>SAVE10</strong> at checkout for 10% instant discount!</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product Categories</h4>
+        <ul class="footer-links">
+          <li><a href="javascript:void(0)" onclick="filterByCategory('audio')">Wireless Audio & ANC</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('wearables')">Smartwatches & Rings</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('accessories')">Mechanical Keyboards & Mice</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('laptops')">4K Studio Displays</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Services</h4>
+        <ul class="footer-links">
+          <li><a href="javascript:void(0)" id="footer-orders-btn">Track Order Status</a></li>
+          <li><a href="javascript:void(0)" onclick="openCartDrawer()">View Shopping Cart</a></li>
+          <li><a href="#catalog-section">Warranty & Returns</a></li>
+          <li><a href="#catalog-section">FAQ & Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>Get VIP Tech Drops</h4>
+        <p>Subscribe for exclusive flash sales, firmware updates, and private vouchers.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to VIP Tech alerts!', 'success'); this.reset();">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <p>&copy; 2026 NovaTech Gear Inc. Built with HTML, CSS, JavaScript & Express.js.</p>
+        <div class="payment-methods">
+          <span><i class="fa-brands fa-cc-visa"></i></span>
+          <span><i class="fa-brands fa-cc-mastercard"></i></span>
+          <span><i class="fa-brands fa-cc-apple-pay"></i></span>
+          <span><i class="fa-brands fa-google-pay"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODALS & DRAWERS -->
+  <!-- ============================================== -->
+
+  <!-- 1. PRODUCT DETAILS MODAL -->
+  <div class="modal-backdrop" id="product-modal-backdrop">
+    <div class="modal-card product-detail-modal" id="product-detail-modal">
+      <button class="modal-close-btn" onclick="closeProductModal()" aria-label="Close product details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="product-modal-body" id="product-modal-content">
+        <!-- Rendered dynamically in app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SHOPPING CART SLIDE-OUT DRAWER -->
+  <div class="drawer-backdrop" id="cart-drawer-backdrop" onclick="closeCartDrawer()"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Your Shopping Bag</h3>
+        <span class="drawer-count" id="drawer-item-count">(0 items)</span>
+      </div>
+      <button class="drawer-close-btn" onclick="closeCartDrawer()" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-list">
+      <!-- Cart items rendered dynamically -->
+    </div>
+
+    <div class="cart-summary" id="cart-summary-section">
+      <!-- Promo code input -->
+      <div class="promo-box">
+        <div class="promo-input-group">
+          <input type="text" id="promo-input" placeholder="Promo code (SAVE10, TECH20)" />
+          <button class="btn btn-secondary btn-sm" id="apply-promo-btn" onclick="applyPromoCode()">Apply</button>
+        </div>
+        <div class="promo-tag" id="promo-applied-tag" style="display: none;">
+          <span><i class="fa-solid fa-tag"></i> <span id="promo-name-display"></span></span>
+          <button class="remove-promo-btn" onclick="removePromoCode()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Financial Calculation -->
+      <div class="summary-lines">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="summary-row discount-row" id="discount-row" style="display: none;">
+          <span>Discount Applied</span>
+          <span id="cart-discount" class="text-green">-$0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Est. Sales Tax (8%)</span>
+          <span id="cart-tax">$0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="cart-shipping">$0.00</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <span id="cart-grand-total" class="gradient-text">$0.00</span>
+        </div>
+      </div>
+
+      <div class="shipping-perk" id="shipping-perk-text">
+        <i class="fa-solid fa-truck"></i> Add items worth $100+ for <strong>FREE Express Shipping</strong>!
+      </div>
+
+      <div class="cart-footer-actions">
+        <button class="btn btn-primary btn-block btn-checkout" id="checkout-btn" onclick="openCheckoutModal()">
+          Proceed to Checkout <i class="fa-solid fa-lock"></i>
+        </button>
+        <button class="btn btn-link btn-block" onclick="closeCartDrawer()">
+          Continue Shopping
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 3. CHECKOUT & ORDER PROCESSING MODAL -->
+  <div class="modal-backdrop" id="checkout-modal-backdrop">
+    <div class="modal-card checkout-modal" id="checkout-modal">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Secure Checkout & Order Processing</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeCheckoutModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="checkout-grid">
+        <!-- Customer & Shipping Form -->
+        <form class="checkout-form" id="checkout-order-form" onsubmit="handleOrderSubmission(event)">
+          <div class="form-section">
+            <h4><i class="fa-solid fa-user"></i> 1. Contact Information</h4>
+            <div class="form-row two-col">
+              <div class="form-group">
+                <label for="cust-name">Full Name *</label>
+                <input type="text" id="cust-name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="cust-email">Email Address *</label>
+                <input type="email" id="cust-email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cust-phone">Phone Number</label>
+              <input type="tel" id="cust-phone" placeholder="+1 (555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h4><i class="fa-solid fa-location-dot"></i> 2. Shipping Address</h4>
+            <div class="form-group">
+              <label for="cust-address">Street Address *</label>
+              <input type="text" id="cust-address" placeholder="123 Innovation Way, Apt 4B" required />
+            </div>
+            <div class="form-row three-col">
+              <div class="form-group">
+                <label for="cust-city">City *</label>
+                <input type="text" id="cust-city" placeholder="San Francisco" required />
+              </div>
+              <div class="form-group">
+                <label for="cust-state">State / Province *</label>
+                <input type="text" id="cust-state" placeholder="CA" required />
+              </div>
+              <div class="form-group">
+                <label for="cust-zip">Postal Code *</label>
+                <input type="text" id="cust-zip" placeholder="94107" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h4><i class="fa-solid fa-shield-check"></i> 3. Payment Method (Simulated)</h4>
+            <div class="payment-tabs">
+              <label class="payment-option selected">
+                <input type="radio" name="paymentMethod" value="Credit Card" checked />
+                <span><i class="fa-regular fa-credit-card"></i> Credit / Debit Card</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="PayPal / Express" />
+                <span><i class="fa-brands fa-paypal"></i> PayPal</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="Cash On Delivery" />
+                <span><i class="fa-solid fa-hand-holding-dollar"></i> Cash on Delivery</span>
+              </label>
+            </div>
+
+            <!-- Simulated Card Input Fields -->
+            <div class="card-sim-fields" id="card-inputs-box">
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <div class="input-with-icon">
+                  <input type="text" id="card-number" placeholder="4532 •••• •••• 8920" maxlength="19" value="4532 8901 2345 8920" />
+                  <i class="fa-brands fa-cc-visa"></i>
+                </div>
+              </div>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="card-expiry">Expiry Date</label>
+                  <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" value="12/28" />
+                </div>
+                <div class="form-group">
+                  <label for="card-cvv">CVV</label>
+                  <input type="password" id="card-cvv" placeholder="•••" maxlength="4" value="892" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-actions">
+            <button type="button" class="btn btn-outline" onclick="closeCheckoutModal()">Back to Cart</button>
+            <button type="submit" class="btn btn-primary btn-glow" id="submit-order-btn">
+              <span id="submit-order-text">Place Order & Pay <span id="checkout-btn-amount">$0.00</span></span>
+              <div class="spinner-sm" id="submit-order-spinner" style="display: none;"></div>
+            </button>
+          </div>
+        </form>
+
+        <!-- Checkout Order Review Panel -->
+        <div class="checkout-review-panel">
+          <h4>Order Summary</h4>
+          <div class="checkout-items-list" id="checkout-mini-items">
+            <!-- Mini item rows -->
+          </div>
+          <div class="checkout-totals-box" id="checkout-mini-totals">
+            <!-- Mini totals -->
+          </div>
+          <div class="security-guarantee">
+            <i class="fa-solid fa-lock"></i>
+            <span>Encrypted 256-Bit SSL Connection. Guaranteed Authentic.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. ORDER SUCCESS & INVOICE MODAL -->
+  <div class="modal-backdrop" id="order-success-backdrop">
+    <div class="modal-card receipt-modal" id="order-success-modal">
+      <div class="receipt-header">
+        <div class="success-icon-wrap">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for choosing NovaTech. Your order has been placed and is being prepared.</p>
+      </div>
+
+      <div class="invoice-container" id="printable-receipt">
+        <div class="invoice-meta-row">
+          <div>
+            <span class="label">Order Reference:</span>
+            <strong id="receipt-order-id" class="receipt-highlight">ORD-000000</strong>
+          </div>
+          <div>
+            <span class="label">Order Date:</span>
+            <span id="receipt-date">-</span>
+          </div>
+          <div>
+            <span class="label">Payment Status:</span>
+            <span class="badge badge-success"><i class="fa-solid fa-check"></i> Paid (Simulated)</span>
+          </div>
+        </div>
+
+        <div class="invoice-recipient-grid">
+          <div class="recipient-box">
+            <h5>Customer Details:</h5>
+            <p id="receipt-customer-name">Alex Rivera</p>
+            <p id="receipt-customer-email">alex@example.com</p>
+            <p id="receipt-customer-phone">+1 555-0199</p>
+          </div>
+          <div class="recipient-box">
+            <h5>Shipping To:</h5>
+            <p id="receipt-customer-address">123 Tech Boulevard</p>
+            <p id="receipt-customer-location">San Francisco, CA 94107</p>
+            <p id="receipt-customer-country">United States</p>
+          </div>
+        </div>
+
+        <!-- Receipt items list -->
+        <table class="receipt-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="text-center">Qty</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Total</th>
+            </tr>
+          </thead>
+          <tbody id="receipt-items-tbody">
+            <!-- Populated dynamically -->
+          </tbody>
+        </table>
+
+        <!-- Receipt totals calculation -->
+        <div class="receipt-totals-wrap" id="receipt-totals-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="receipt-actions">
+        <button class="btn btn-outline" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> Print Invoice
+        </button>
+        <button class="btn btn-primary" onclick="viewOrderTrackingFromReceipt()">
+          <i class="fa-solid fa-truck-fast"></i> Track Status
+        </button>
+        <button class="btn btn-secondary" onclick="closeOrderSuccessModal()">
+          Continue Shopping
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. ORDER TRACKING & ORDER HISTORY MODAL -->
+  <div class="modal-backdrop" id="orders-modal-backdrop">
+    <div class="modal-card orders-management-modal" id="orders-modal">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-box-archive"></i>
+          <h3>Order History & Live Tracking</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeOrdersModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Tracking Search Box -->
+      <div class="tracking-search-bar">
+        <div class="input-with-action">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="track-order-input" placeholder="Enter Order ID (e.g. ORD-84921)..." />
+          <button class="btn btn-primary btn-sm" onclick="trackOrderById()">Track Order</button>
+        </div>
+      </div>
+
+      <div id="tracked-order-result" class="tracked-order-result" style="display: none;">
+        <!-- Single tracked order status tracker -->
+      </div>
+
+      <!-- Recent Orders List -->
+      <div class="recent-orders-section">
+        <h4>Recent Orders</h4>
+        <div class="orders-list-table-wrap">
+          <table class="orders-list-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="orders-list-tbody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>

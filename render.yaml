@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: novatech-gear-ecommerce
+    runtime: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0

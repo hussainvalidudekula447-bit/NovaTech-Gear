@@ -1,0 +1,71 @@
+[
+  {
+    "id": "ORD-532752",
+    "createdAt": "2026-09-10T17:06:07.054Z",
+    "customer": {
+      "fullName": "Jane Doe",
+      "email": "jane@novatech.test",
+      "phone": "N/A",
+      "address": "100 Cyber Ave",
+      "city": "Neo City",
+      "state": "N/A",
+      "zip": "N/A",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Apex Sonic Pro Wireless ANC Headphones",
+        "price": 249.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80"
+      }
+    ],
+    "subtotal": 249.99,
+    "discountAmount": 25,
+    "promoCode": "SAVE10",
+    "tax": 18,
+    "shipping": 0,
+    "total": 242.99,
+    "paymentMethod": "Credit Card",
+    "status": "Confirmed"
+  },
+  {
+    "id": "ORD-84921",
+    "createdAt": "2026-09-10T14:30:00.000Z",
+    "customer": {
+      "fullName": "Alex Rivera",
+      "email": "alex.rivera@example.com",
+      "phone": "+1 (555) 234-5678",
+      "address": "742 Evergreen Terrace",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62704",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "prod-1",
+        "name": "Apex Sonic Pro Wireless ANC Headphones",
+        "price": 249.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80"
+      },
+      {
+        "id": "prod-4",
+        "name": "Quantum Precision 8K Gaming Mouse",
+        "price": 79.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&q=80"
+      }
+    ],
+    "subtotal": 329.98,
+    "discountAmount": 32.998,
+    "promoCode": "SAVE10",
+    "tax": 23.76,
+    "shipping": 0,
+    "total": 320.74,
+    "paymentMethod": "Credit Card (Simulated)",
+    "status": "Processing"
+  }
+]

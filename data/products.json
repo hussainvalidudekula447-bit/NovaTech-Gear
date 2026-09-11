@@ -1,0 +1,218 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Apex Sonic Pro Wireless ANC Headphones",
+    "category": "audio",
+    "price": 249.99,
+    "originalPrice": 299.99,
+    "rating": 4.8,
+    "reviewsCount": 128,
+    "badge": "Bestseller",
+    "stock": 17,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+    "description": "Experience true studio-quality sound with 40mm custom graphene dynamic drivers, active hybrid noise cancellation, 60-hour battery life, and plush memory foam earcups designed for all-day comfort.",
+    "specs": {
+      "Battery Life": "Up to 60 Hours (ANC Off) / 45 Hours (ANC On)",
+      "Connectivity": "Bluetooth 5.3 + 3.5mm Aux",
+      "Driver Size": "40mm Graphene",
+      "Noise Cancellation": "Hybrid Active Noise Cancellation (40dB depth)",
+      "Weight": "245g",
+      "Warranty": "2 Years Manufacturer Warranty"
+    },
+    "features": [
+      "Ultra-low latency gaming and movie mode",
+      "Multipoint connection: pair 2 devices simultaneously",
+      "Fast charging: 10 mins gives 5 hours playtime",
+      "Customizable EQ app presets"
+    ]
+  },
+  {
+    "id": "prod-2",
+    "name": "Vortex Pulse Smartwatch Ultra 2",
+    "category": "wearables",
+    "price": 189.5,
+    "originalPrice": 220,
+    "rating": 4.7,
+    "reviewsCount": 94,
+    "badge": "Featured",
+    "stock": 14,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+    "description": "A high-precision aerospace titanium smartwatch featuring a 1.95-inch AMOLED always-on display, continuous ECG/SpO2 health tracking, offline GPS mapping, and 10ATM water resistance.",
+    "specs": {
+      "Display": "1.95\" AMOLED (480x410, 1000 nits peak)",
+      "Battery Life": "12 Days typical use / 48 hrs continuous GPS",
+      "Water Resistance": "10 ATM (100 meters)",
+      "Sensors": "Heart Rate, SpO2, ECG, Barometer, Compass, Temp",
+      "Case Material": "Grade 5 Titanium & Sapphire Glass",
+      "Compatibility": "iOS & Android"
+    },
+    "features": [
+      "120+ workout and outdoor sports tracking modes",
+      "Hands-free Bluetooth calling with dual AI microphones",
+      "Sleep quality and recovery scoring algorithm",
+      "Custom watch faces & widgets"
+    ]
+  },
+  {
+    "id": "prod-3",
+    "name": "CyberBlade RGB Mechanical Keyboard",
+    "category": "accessories",
+    "price": 129.99,
+    "originalPrice": 149.99,
+    "rating": 4.9,
+    "reviewsCount": 215,
+    "badge": "Top Rated",
+    "stock": 25,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+    "description": "Crafted with CNC machined aluminum body, hot-swappable linear lubricated switches, sound-dampening gasket mount, and per-key customizable dynamic RGB backlighting.",
+    "specs": {
+      "Form Factor": "75% Compact Layout (84 Keys)",
+      "Switches": "Pre-lubed Custom Linear Red Switches (Hot-swappable)",
+      "Connection": "Tri-Mode (2.4GHz Wireless, Bluetooth 5.1, USB-C)",
+      "Keycaps": "Double-shot PBT Cherry Profile",
+      "Battery": "4000mAh rechargeable lithium battery",
+      "RGB": "16.8 Million Colors with 22 dynamic animations"
+    },
+    "features": [
+      "Gasket mounted plate for acoustic sound resonance",
+      "Programmable multi-function rotary volume knob",
+      "South-facing RGB LEDs for brilliant illumination",
+      "Full N-key rollover and 100% anti-ghosting"
+    ]
+  },
+  {
+    "id": "prod-4",
+    "name": "Quantum Precision 8K Gaming Mouse",
+    "category": "accessories",
+    "price": 79.99,
+    "originalPrice": 99.99,
+    "rating": 4.6,
+    "reviewsCount": 83,
+    "badge": "Sale",
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&q=80",
+    "description": "Engineered for competitive esports with an ultra-lightweight 54g honeycomb chassis, 26,000 DPI optical sensor, true 8,000Hz polling rate, and optical micro-switches rated for 90M clicks.",
+    "specs": {
+      "Sensor": "PixArt 3395 Optical Sensor",
+      "Max DPI": "26,000 DPI (Adjustable in steps of 50)",
+      "Polling Rate": "8000Hz (0.125ms response time)",
+      "Weight": "54 grams ultralight",
+      "Feet": "100% Virgin Grade PTFE Skates",
+      "Battery Life": "80 Hours on 2.4G wireless"
+    },
+    "features": [
+      "Zero-debounce optical switches for lightning clicks",
+      "Paracord flexible charging cable included",
+      "Onboard memory profiles for custom macros",
+      "Ergonomic shape for claw and palm grips"
+    ]
+  },
+  {
+    "id": "prod-5",
+    "name": "AeroView 4K UHD Studio Monitor 27\"",
+    "category": "laptops",
+    "price": 499,
+    "originalPrice": 599,
+    "rating": 4.9,
+    "reviewsCount": 67,
+    "badge": "Pro Choice",
+    "stock": 8,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+    "description": "A frameless 27-inch 4K IPS display engineered for creative professionals and power users, featuring 99% DCI-P3 color gamut, HDR600, USB-C 90W Power Delivery, and ergonomic tilt/swivel stand.",
+    "specs": {
+      "Resolution": "3840 x 2160 (4K UHD)",
+      "Panel Type": "IPS with 178° viewing angle",
+      "Color Accuracy": "ΔE < 1.5, 99% DCI-P3, 100% sRGB",
+      "Brightness": "600 nits (VESA DisplayHDR 600)",
+      "Ports": "1x USB-C (90W PD), 2x HDMI 2.1, 1x DP 1.4, 3x USB 3.2",
+      "Refresh Rate": "144Hz with FreeSync Premium"
+    },
+    "features": [
+      "Single-cable laptop docking with 90W charging",
+      "Hardware color calibration support",
+      "Integrated KVM switch for multi-computer setups",
+      "TÜV Rheinland certified flicker-free low blue light"
+    ]
+  },
+  {
+    "id": "prod-6",
+    "name": "SoundWave Max Portable Bluetooth Speaker",
+    "category": "audio",
+    "price": 89.99,
+    "originalPrice": 110,
+    "rating": 4.7,
+    "reviewsCount": 142,
+    "badge": "Popular",
+    "stock": 22,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+    "description": "360-degree room-filling acoustic sound with dual passive bass radiators, IP67 waterproof and dustproof build, 24-hour battery with powerbank functionality to charge your phone on the go.",
+    "specs": {
+      "Power Output": "40W RMS (Bass Boost Engine)",
+      "Battery Life": "24 Hours continuous playback",
+      "Waterproof Rating": "IP67 (Submersible up to 1m for 30 min)",
+      "Bluetooth": "5.3 with 100ft wireless range",
+      "Weight": "720g with integrated lanyard",
+      "Party Mode": "Link up to 50+ speakers in sync"
+    },
+    "features": [
+      "Built-in 6000mAh power bank to charge mobile phones",
+      "Drop-proof rugged silicone exterior",
+      "Integrated microphone for conference calls",
+      "Ambient pulsing LED light ring"
+    ]
+  },
+  {
+    "id": "prod-7",
+    "name": "NovaTab Ultra 11\" M-Series Tablet",
+    "category": "laptops",
+    "price": 649.99,
+    "originalPrice": 729.99,
+    "rating": 4.8,
+    "reviewsCount": 51,
+    "badge": "New",
+    "stock": 11,
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80",
+    "description": "Supercharged with octa-core 4nm processing power, 120Hz Liquid Retina display, magnetic stylus support, and quad studio speakers tuned with Dolby Atmos for peak productivity and creativity.",
+    "specs": {
+      "Processor": "Octa-core 4nm High Performance SoC",
+      "Memory & Storage": "8GB RAM + 256GB NVMe Storage",
+      "Display": "11\" 2560x1600 120Hz ProMotion",
+      "Cameras": "13MP Rear + 8MP Ultra-wide Front with Center Focus",
+      "Battery": "8600mAh with 45W Fast Charging",
+      "Weight": "468 grams"
+    },
+    "features": [
+      "Magnetic stylus attachment with wireless charging",
+      "Desktop mode support with external monitor output",
+      "Facial recognition + under-display fingerprint unlock",
+      "Wi-Fi 6E and 5G LTE capability"
+    ]
+  },
+  {
+    "id": "prod-8",
+    "name": "AuraFit Smart Ring Health Tracker",
+    "category": "wearables",
+    "price": 159,
+    "originalPrice": 189,
+    "rating": 4.5,
+    "reviewsCount": 63,
+    "badge": "Trending",
+    "stock": 16,
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+    "description": "Discreet, featherlight titanium smart ring providing 24/7 biometric health intelligence: accurate sleep stage tracking, body temperature trends, HRV readiness scores, and activity monitoring.",
+    "specs": {
+      "Material": "Medical-grade Titanium with PVD coating",
+      "Weight": "Under 4 grams",
+      "Battery": "7 Days battery life on a single 30-min charge",
+      "Water Resistance": "100m water resistant (suitable for swimming & diving)",
+      "Sensors": "Optical PPG, 3D Accelerometer, Negative Temp Sensor",
+      "Sizes": "Available in sizes 6 through 13"
+    },
+    "features": [
+      "Zero-screen distraction: all insights synced to mobile app",
+      "Daily Readiness and Energy Score",
+      "Automatic menstrual cycle and fertility prediction",
+      "Includes magnetic wireless charging dock"
+    ]
+  }
+]
