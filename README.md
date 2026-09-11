@@ -1,10 +1,11 @@
-# NovaTech Gear — Modern E-Commerce Platform
+# ⚡ NovaTech Gear — Modern Cyberpunk E-Commerce Platform
 
 <div align="center">
 
 ![Node.js](https://img.shields.io/badge/Node.js-v18+-green.svg?style=for-the-badge&logo=node.js)
 ![Express](https://img.shields.io/badge/Express.js-v4.19-blue.svg?style=for-the-badge&logo=express)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange.svg?style=for-the-badge&logo=html5)
+![Design](https://img.shields.io/badge/Theme-Cyberpunk%20Glassmorphism-9cf.svg?style=for-the-badge)
 ![Deployment](https://img.shields.io/badge/Deployed-Render-46E3B7?style=for-the-badge&logo=render)
 ![License](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)
 
@@ -20,15 +21,15 @@
 
 ## 🌟 Key Features
 
-- 🎧 **Dynamic Product Catalog**: Browse curated high-tech electronics, headphones, smartwatches, and mechanical keyboards.
+- 🎧 **Dynamic Product Catalog**: Browse curated high-tech electronics, studio headphones, smart wearables, displays, and RGB mechanical keyboards.
 - 🔍 **Real-Time Search & Category Filters**: Instant client-side filtering by category (Audio, Wearables, Accessories, Displays) and keyword matching.
 - ↕️ **Smart Sorting**: Sort items by price (low to high, high to low), customer ratings, or alphabetical order.
 - 📦 **Interactive Product Details Modal**: View high-resolution imagery, full technical spec sheets, feature lists, and stock availability.
 - 🛍️ **Slide-Out Shopping Cart Drawer**:
-  - Live quantity adjustment (+ / -) and item removal.
+  - Live quantity adjustment (+ / -) and instant item removal.
   - Persistent cart state using `localStorage`.
   - Free express shipping progress indicator.
-- 🎟️ **Promo Code Engine**: Real-time voucher discounts (Try `SAVE10` for 10% off, `TECH20` for 20% off).
+- 🎟️ **Promo Code Engine**: Real-time voucher discount validator (Try `SAVE10` for 10% off, `TECH20` for 20% off, `WELCOME15` for 15% off).
 - 💳 **Checkout & Order Processing**:
   - Customer information and shipping address validation.
   - Simulated 256-bit SSL encrypted payment gateway.
@@ -96,18 +97,86 @@ http://localhost:3000
 ---
 
 ## 🎟️ Demo Promo Codes
-- `SAVE10` &rarr; 10% Off Entire Order
-- `TECH20` &rarr; 20% Off Tech Gadgets
-- `WELCOME15` &rarr; 15% Off Welcome Discount
+
+| Promo Code | Discount | Description |
+| :--- | :--- | :--- |
+| `SAVE10` | **10% OFF** | 10% Off Entire Order |
+| `TECH20` | **20% OFF** | 20% Off Tech Gadgets |
+| `WELCOME15` | **15% OFF** | 15% Off Welcome Discount |
 
 ---
 
-## 👨‍💻 Author
+## 🚀 Future Enhancements
 
-- **Hussain Dudekula**
+- 💳 **Stripe & PayPal Gateway**: Real production credit card and wallet payments.
+- 🔐 **User Authentication**: JWT / OAuth2 user registration, login, and profile accounts.
+- ❤️ **Customer Wishlist**: Save favorite tech gear across browser sessions.
+- 💬 **Live Customer Support Chatbot**: AI-powered conversational sales assistant.
+- 📦 **Real-Time Courier API**: Live webhook tracking integration with FedEx/DHL.
+- 📊 **Merchant Analytics Dashboard**: Real-time revenue, top-selling gear, and traffic graphs.
+- 🌐 **Multi-Currency Support**: Instant USD, EUR, INR, GBP currency converter.
+- 🔔 **Email & SMS Notifications**: Automated order confirmations and dispatch alerts.
+
+---
+
+## 🧪 Testing Checklist
+
+- [x] Server initializes on dynamic port (`process.env.PORT || 3000`)
+- [x] Product catalog loads asynchronously via REST API
+- [x] Category filtering and search query matching work
+- [x] Sorting by price and ratings works
+- [x] Product details modal opens and closes smoothly
+- [x] Add to cart, quantity change (+ / -), and delete work
+- [x] Cart state persists in `localStorage`
+- [x] Promo code validation applies discounts correctly
+- [x] Checkout form validates required customer fields
+- [x] Order is created, saved to database, and stock updates
+- [x] Printable invoice receipt generates accurately
+- [x] Order tracking page displays order progress
+- [x] Responsive layout across desktop, tablet, and mobile
+- [x] Production deployment on Render works
+
+---
+
+## 👨‍💻 Developer
+
+**Dudekula Hussain Vali**  
+*AI/ML Enthusiast | Generative AI Developer | Full-Stack Developer*
+
+**NovaTech Gear** showcases the development of a production-oriented e-commerce platform, combining sleek cyberpunk UI design, RESTful backend engineering, state management, checkout processing, and cloud deployment into one scalable web application.
+
 - **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
 - **Portfolio**: [my-portfolio-hussainvali.vercel.app](https://my-portfolio-hussainvali.vercel.app/)
-- **Repository**: [github.com/hussainvalidudekula447-bit/NovaTech-Gear](https://github.com/hussainvalidudekula447-bit/NovaTech-Gear)
+
+---
+
+## 📌 Project Information
+
+| Information | Details |
+| :--- | :--- |
+| **Project Name** | NovaTech Gear |
+| **Project Type** | E-Commerce Web Application |
+| **Category** | Full Stack / Node.js |
+| **Backend** | Node.js + Express.js |
+| **Frontend** | HTML5 + CSS3 + Vanilla JavaScript |
+| **Theme / Design** | Cyberpunk Glassmorphism / Dark Mode |
+| **Database** | File-Based Persistent JSON (`products.json`, `orders.json`) |
+| **Deployment** | Render |
+| **Version Control** | Git + GitHub |
+| **Status** | ✅ Completed & Deployed |
+| **Repository** | [github.com/hussainvalidudekula447-bit/NovaTech-Gear](https://github.com/hussainvalidudekula447-bit/NovaTech-Gear) |
+
+---
+
+## ⭐ Support
+
+If you find **NovaTech Gear** useful, consider giving the repository a ⭐ on GitHub!
+
+---
+
+## 🚀 NovaTech Gear
+*One stop for next-generation tech and gaming gear.*  
+**Browse. Order. Track. Game.**
 
 ---
 
