@@ -146,7 +146,6 @@ http://localhost:3000
 **NovaTech Gear** showcases the development of a production-oriented e-commerce platform, combining sleek cyberpunk UI design, RESTful backend engineering, state management, checkout processing, and cloud deployment into one scalable web application.
 
 - **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
-- **Portfolio**: [my-portfolio-hussainvali.vercel.app](https://my-portfolio-hussainvali.vercel.app/)
 
 ---
 
