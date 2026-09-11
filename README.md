@@ -137,11 +137,15 @@ Visit `http://localhost:3000` in your web browser.
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author & Developer
 
-- **Hussain Dudekula**
-- GitHub: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
-- Live Store: [novatech-gear-ecommerce.onrender.com](https://novatech-gear-ecommerce.onrender.com/)
+**Dudekula Hussain Vali**  
+*AI/ML Enthusiast | Generative AI Developer | Full-Stack Web Developer*
+
+- 🐙 **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
+- ✉️ **Email**: [hussainvalidudekula447@gmail.com](mailto:hussainvalidudekula447@gmail.com)
+- 🌐 **Live Store**: [https://novatech-gear-ecommerce.onrender.com](https://novatech-gear-ecommerce.onrender.com/)
+
 
 ---
 
