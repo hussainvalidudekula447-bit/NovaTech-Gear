@@ -1,11 +1,20 @@
 # NovaTech Gear — Modern E-Commerce Platform
 
-![Node.js](https://img.shields.io/badge/Node.js-v18+-green.svg)
-![Express](https://img.shields.io/badge/Express.js-v4.19-blue.svg)
-![Frontend](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-purple.svg)
+<div align="center">
 
-A full-stack, responsive modern electronics and gaming gear e-commerce platform built with **Vanilla HTML5/CSS3/JavaScript** frontend and **Express.js (Node.js)** REST API backend.
+![Node.js](https://img.shields.io/badge/Node.js-v18+-green.svg?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-v4.19-blue.svg?style=for-the-badge&logo=express)
+![Frontend](https://img.shields.io/badge/Frontend-HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange.svg?style=for-the-badge&logo=html5)
+![Deployment](https://img.shields.io/badge/Deployed-Render-46E3B7?style=for-the-badge&logo=render)
+![License](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)
+
+<p align="center">
+  <strong>A full-stack, responsive modern electronics and gaming gear e-commerce platform built with Vanilla HTML5/CSS3/JavaScript frontend and Express.js REST API backend.</strong>
+</p>
+
+[**Explore GitHub Repository »**](https://github.com/hussainvalidudekula447-bit/NovaTech-Gear)
+
+</div>
 
 ---
 
@@ -32,9 +41,12 @@ A full-stack, responsive modern electronics and gaming gear e-commerce platform 
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: HTML5, Semantic CSS3 (Dark Cyberpunk Glassmorphism Theme, CSS Grid/Flexbox), Vanilla JavaScript (ES6+).
-- **Backend**: Express.js (Node.js REST API).
-- **Database**: File-based persistent JSON storage (`data/products.json` & `data/orders.json`).
+| Layer | Technology | Details |
+| :--- | :--- | :--- |
+| **Frontend** | HTML5, Vanilla CSS3, JavaScript (ES6+) | Dark Cyberpunk Glassmorphism Theme, CSS Grid & Flexbox, micro-animations |
+| **Backend** | Node.js, Express.js | High-performance RESTful API endpoints |
+| **Database** | File-Based Persistent JSON | `data/products.json` (Products Catalog) & `data/orders.json` (Orders DB) |
+| **Deployment** | Render.com | Automated deployment via GitHub with auto-builds |
 
 ---
 
@@ -45,8 +57,9 @@ A full-stack, responsive modern electronics and gaming gear e-commerce platform 
 - npm (installed automatically with Node.js)
 
 ### 2. Installation
-Clone or navigate to the project directory:
+Clone the repository:
 ```bash
+git clone https://github.com/hussainvalidudekula447-bit/NovaTech-Gear.git
 cd NovaTech-Gear
 ```
 
@@ -92,8 +105,9 @@ http://localhost:3000
 ## 👨‍💻 Author
 
 - **Hussain Dudekula**
-- GitHub: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
-- Portfolio: [my-portfolio-hussainvali.vercel.app](https://my-portfolio-hussainvali.vercel.app/)
+- **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
+- **Portfolio**: [my-portfolio-hussainvali.vercel.app](https://my-portfolio-hussainvali.vercel.app/)
+- **Repository**: [github.com/hussainvalidudekula447-bit/NovaTech-Gear](https://github.com/hussainvalidudekula447-bit/NovaTech-Gear)
 
 ---
 

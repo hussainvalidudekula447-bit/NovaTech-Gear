@@ -1,8 +1,13 @@
 {
-  "name": "novatech-ecommerce",
+  "name": "novatech-gear-ecommerce",
   "version": "1.0.0",
-  "description": "Modern E-Commerce Store with Product Listings, Cart, and Order Processing",
+  "description": "Modern Cyberpunk E-Commerce Store with Product Catalog, Shopping Cart, and Order Processing",
   "main": "server.js",
+  "author": "Hussain Dudekula <https://github.com/hussainvalidudekula447-bit>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussainvalidudekula447-bit/NovaTech-Gear.git"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
