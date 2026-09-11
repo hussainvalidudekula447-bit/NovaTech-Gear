@@ -137,14 +137,27 @@ Visit `http://localhost:3000` in your web browser.
 
 ---
 
-## 👨‍💻 Author & Developer
+## 👨‍💻 About the Author & Developer
 
-**Dudekula Hussain Vali**  
+<div align="left">
+
+### **Dudekula Hussain Vali**
 *AI/ML Enthusiast | Generative AI Developer | Full-Stack Web Developer*
 
+A passionate software developer focused on building scalable full-stack web applications, generative AI systems, and modern, high-performance digital experiences. **NovaTech Gear** was designed and engineered to showcase clean RESTful architecture, responsive glassmorphism UI design, real-time state management, and seamless cloud deployment.
+
+#### 🛠️ Core Competencies & Interests
+- **Frontend**: HTML5, CSS3/Glassmorphism, JavaScript (ES6+), Responsive UI/UX Design
+- **Backend & APIs**: Node.js, Express.js, Python, RESTful API Design & Integration
+- **AI / Machine Learning**: Generative AI, Large Language Models (LLMs), Machine Learning Workflows
+- **DevOps & Tools**: Git/GitHub, Cloud Deployment (Render), CI/CD Automation
+
+#### 📬 Connect with Me
 - 🐙 **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
 - ✉️ **Email**: [hussainvalidudekula447@gmail.com](mailto:hussainvalidudekula447@gmail.com)
-- 🌐 **Live Store**: [https://novatech-gear-ecommerce.onrender.com](https://novatech-gear-ecommerce.onrender.com/)
+- 🌐 **Live Demo**: [https://novatech-gear-ecommerce.onrender.com](https://novatech-gear-ecommerce.onrender.com/)
+
+</div>
 
 
 ---
